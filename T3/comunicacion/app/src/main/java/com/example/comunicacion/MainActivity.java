@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Log.v("cronometro", String.valueOf(SystemClock.elapsedRealtime()));
 
         if (savedInstanceState != null){
-            String nombre = savedInstanceState.getString("nombre");
-            Log.v("test_datos", nombre);
+            long base = savedInstanceState.getLong("crono", 0);
+            cronometro.setBase(base);
         }
 
     }
@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("nombre","elemento guardado en estado");
+        long base=cronometro.getBase();
+        outState.putLong("crono", base);
     }
 
     @Override
