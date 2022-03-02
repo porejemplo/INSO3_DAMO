@@ -5,31 +5,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".MainActivity">
 
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/toggle_button"
-        android:textOn=""
-        android:textOff=""
-        android:checked="true"
-        android:background="@drawable/toggle_background"
-        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggle_button"
+                android:textOn=""
+                android:textOff=""
+                android:checked="true"
+                android:background="@drawable/toggle_background"
+                />
 
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/switch_elemento"
-        />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch_elemento"
+                />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/check"
-        android:text="Seleccion"
-        android:textSize="50sp"
-        />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check"
+                android:text="Seleccion"
+                android:textSize="50sp"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grupo_radios">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opcion 1"
+                    android:id="@+id/radio1"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opcion 2"
+                    android:id="@+id/radio2"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opcion 3"
+                    android:id="@+id/radio3"
+                    />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />  <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcion 3"
+                android:id="@+id/radio3"
+                />
+
+            </RadioGroup>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>
